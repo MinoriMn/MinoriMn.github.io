@@ -57,7 +57,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
   top: 50%;
 	width: 100%;
 	-webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);message_rs
+  transform: translate(0, -50%);
 	color: #fff;
 	line-height: 1.2;
 	text-align: center;
@@ -80,6 +80,8 @@ a:active, a:focus,input:active, input:focus{outline:0;}
     overflow:hidden;
     width:100%;
     height:300px;
+		background: url("../images/software_mainimg.jpg") no-repeat 100% 100% fixed;
+		color: #fff;
 }
 
 #page_info{
@@ -90,6 +92,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
   transform: translate(0, -50%);
 	line-height: 1.2;
 	text-align: center;
+
 }
 
 #page_info h1{
@@ -108,6 +111,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	width: 100%;
 	text-align: center;
 	padding-bottom: 5%;
+	padding-top: 3%;
 }
 
 #page_intro p{
@@ -173,21 +177,35 @@ section h2{
 	clear: both;
 	width: 100%;
 	background: #f6f6f6;
-	padding-top: 50px;
+	padding: 2% 0%;
+	display: table;
 }
 
 .bg{
 	line-height: 0;
+	height: 100%;
+	padding-top: 3%;
+}
+
+.bg img{
+	object-fit: contain;
+	vertical-align: middle;
 }
 
 .txt h2{
 	padding: 0 0 20px !important;
+
+}
+
+/*ソフトウェアProducts sec2-01*/
+
+#sec2_01{
+	padding-top: 50px;
 }
 
 #sec2_01 header{
 	background: #f6f6f6;
 }
-
 
 /* SERVICE MESSAGE STORY
 ------------------------------------------------------------*/
@@ -243,24 +261,20 @@ section h2{
 }
 
 #sec02 dd{
-	width: 50%;
+	width: 60%;
 	float: left;
 	text-align: left;
 	margin-bottom: 15px;
 	line-height: 1.6em;
 }
 
-#sec02 header{
-
-}
-
 #my_pic{
-	width: 34%;
 	position: relative;
-	float: right;
-	padding-bottom: 50%;
+	width: 100%;
+	padding-top: 50%;
+	padding-bottom:  50%;
 	overflow: hidden;
-	display:inline;
+	vertical-align: middle;
 }
 
 #my_pic img{
@@ -270,7 +284,6 @@ section h2{
 	width: 100% !important;
 	height: 100% !important;
 	border: 0;
-
 	object-fit: contain;
 }
 
@@ -294,7 +307,7 @@ section h2{
 
 .col3 li{
 	display: inline-block;
-	width: 30%;
+	width: 40%;
 	padding: 0 4%;
 	margin-bottom: 0;
 	vertical-align: top;
@@ -314,7 +327,7 @@ section h2{
 		padding: 70px 0 20px;
 	}
 	.txt h2{
-		padding: 0 0 20px !important;
+		padding: 0 0 10px !important;
 	}
 }
 
@@ -368,8 +381,6 @@ section h2{
 
 	#toppage{
 		position:relative;
-
-		color: #f00;
 		display: inline-block;
 		padding: 45px 10px 20px 40px;
 	}
@@ -382,9 +393,13 @@ section h2{
 		display: table;
 	background: #f6f6f6;
 	}
+	#message_rs{
+		background: #d6d6d6;
+	}
 
 	#message_rs .txt, #message_rs .bg{
 		float: right;
+		background: #d6d6d6;
 	}
 
 	.vMid{
@@ -406,17 +421,36 @@ section h2{
 }
 
 @media only screen and (min-width: 641px){
-	.col2 li{
-		width: 60%;
-		padding: 0 3%;
+	.col2 li:nth-child(1){
+		width: 69%;
+		margin-right: 1%;
 		vertical-align: top;
+	}
+
+	.col2 li:nth-child(2){
+		width: 30%;
+		vertical-align: top;
+	}
+
+	.col2{
+		 display:flex;
+	}
+
+	#my_pic{
+		height: 80%;
+		padding-top: 0%;
+		padding-bottom:  0%;
 	}
 }
 
 @media only screen and (max-width: 640px){
-	#map iframe{
+	#my_pic{
 	  width: 96% !important;
 		left: 2%;
+	}
+
+	.self-intro dd{
+		font-size: medium;
 	}
 }
 
@@ -445,7 +479,7 @@ section h2{
   	width: 18px;
   	height: 2px;
   	margin: -1px 0 0 -7px;
-  	background: #fff;
+  	background: #000;
   	transition: .2s;
 	}
 
@@ -457,7 +491,7 @@ section h2{
   	left: 0;
   	width: 18px;
   	height: 2px;
-  	background: #fff;
+  	background: #000;
   	transition: .3s;
 	}
 

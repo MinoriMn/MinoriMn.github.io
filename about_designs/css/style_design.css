@@ -1,0 +1,57 @@
+#header {
+		color: #ffffff;
+		background: linear-gradient(to top, rgba(30, 30, 30, 0.3) 0%, rgba(30, 30, 30, 0.3) 100%),url("../images_design/sign_for_festival_left2bu.jpg");
+		background-size: cover;
+    background-attachment: fixed;
+    height:600px !important;
+}
+
+#sec3_01{
+	padding-top: 50px;
+	width: 100%;
+}
+
+figcaption{
+	position: absolute;
+	width: 90%;
+	top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+	text-align: center;
+	transform: scale(0);
+	transition: 1s;
+  -webkit-transition: 1s;
+}
+
+.effect-oscar{
+    background-color: #000;
+		color: #fff;
+}
+
+.effect-oscar h2{
+	font-size: 3vw;
+}
+
+.effect-oscar p{
+	font-size: 2vw;
+	 word-wrap: break-word;
+}
+
+.effect-oscar img{
+	-webkit-transition: all 1s;
+		 -moz-transition: all 1s;
+		 -ms-transition: all 1s;
+		 -o-transition: all 1s;
+		 transition: all 1s;
+		 opacity: 1;
+}
+
+figure.effect-oscar:hover img{
+	opacity: 0.5;
+}
+
+figure.effect-oscar:hover figcaption{
+	transform: scale(1);
+}
