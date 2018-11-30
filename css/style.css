@@ -109,14 +109,12 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 #page_intro{
 	width: 100%;
+	padding-top: 5%;
 	text-align: center;
-	padding-bottom: 5%;
-	padding-top: 3%;
 }
 
-#page_intro p{
 
-}
+
 
 
 
@@ -200,7 +198,7 @@ section h2{
 /*ソフトウェアProducts sec2-01*/
 
 #sec2_01{
-	padding-top: 50px;
+	padding-top: 0px;
 }
 
 #sec2_01 header{
