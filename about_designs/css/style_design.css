@@ -1,3 +1,5 @@
+*, *:before, *:after {box-sizing:  border-box !important;}
+
 #header {
 		color: #ffffff;
 		background: linear-gradient(to top, rgba(30, 30, 30, 0.3) 0%, rgba(30, 30, 30, 0.3) 100%),url("../images_design/sign_for_festival_left2bu.jpg");
@@ -8,16 +10,67 @@
 
 #sec3_01{
 	padding-top: 50px;
+	padding-bottom: 50px;
 	width: 100%;
 }
 
-figcaption{
+.container{
+	width: 100%;
+}
+
+.grid{
+	width: 100%;
+  margin: 0 auto;   /*中央寄せ*/
+  position: relative;
+}
+
+.container .grid-item, .container .grid-sizer {
+  width:  50%;
+	padding: 10px;
+}
+
+.grid-item--width2 { width: 100% !important; }
+
+@media screen and (max-width: 640px) {
+	.container .grid-item, .container .grid-sizer{
+		width: 100%;
+	}
+}
+
+.card{
+    background-color: #000;
+		color: #fff;
+		width: 100%;
+}
+
+.card img{
+	display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-info{
 	position: absolute;
-	width: 94%;
-	height: 100%;
 	top: 0;
-	margin: 0 0 0 2.8%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0;
 	text-align:center;
+	display: flex;
+
+	-webkit-transition: 1s;
+		 -moz-transition: all 1s;
+		 -ms-transition: all 1s;
+		 -o-transition: all 1s;
+}
+
+.card-info-tex{
+	flex: 0 1 auto;
+	margin: auto;
+	padding: 3%;
+
 	transform: scale(0.7);
 	opacity: 0;
 	transition: 1s;
@@ -25,42 +78,33 @@ figcaption{
 		 -moz-transition: all 1s;
 		 -ms-transition: all 1s;
 		 -o-transition: all 1s;
-
-
 }
 
-.effect-oscar{
-	margin-top: 1%;
-    background-color: #000;
-		color: #fff;
+.card-info-tex h2{
+	padding-top: 0px !important;
+	font-size: 2.2vw;
 }
 
-.effect-oscar h2{
-
-	margin-bottom: 5%;
-
-	font-size: 2.5vw;
-}
-
-.effect-oscar p{
-	font-size: 1.5vw;
+.card-info-tex p{
+	font-size: 1.1vw;
 	 word-wrap: break-word;
 }
 
-.effect-oscar img{
-	-webkit-transition: all 1s;
-		 -moz-transition: all 1s;
-		 -ms-transition: all 1s;
-		 -o-transition: all 1s;
-		 transition: all 1s;
-		 opacity: 1;
+div.card:hover div.card-info{
+	opacity: 0.8;
 }
 
-figure.effect-oscar:hover img{
-	opacity: 0.5;
-}
-
-figure.effect-oscar:hover figcaption{
+div.card:hover div.card-info-tex{
 	transform: scale(1);
 	opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+	.card-info-tex h2{
+		font-size: 4.4vw;
+	}
+
+	.card-info-tex p{
+		font-size: 2.2vw;
+	}
 }
