@@ -79,137 +79,110 @@ jQuery(function($){
 
 		<div class="grid">
 			<div class="grid-sizer"></div>
-			<div class="grid-item">
-				<div class="card">
-					<img src="images_design/test_name.gif" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>お天気流星群</h2>
-							<p>
-								最近、一枚絵を作るだけでなくもっと動的な作品を作る挑戦をしています。これはその第一号作品です。<br>
-								多数ライブラリをベースにした自作Javaライブラリで制作しているので、かなり自由度高く作品を制作することができます。<br>
-								素材には2017年第67回調布祭のパンフレットの表紙を使用しています。
-							</p>
-						</div>
-					</div>
-				</div>
 
-			</div>
+			<script type="text/javascript">
 
-			<div class="grid-item">
-				<div class="card">
-					<img src="images_design/M3-jacket.jpg" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>Rhythmic Motion ジャケット</h2>
-							<p>サークルのCDジャケットの表紙です。<br>
-								テーマを表し、販売会でも目立つようにと悩み抜いて作っています。
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			// [image_name, image_subscription, grid_cumstom]
+			let imageInfos = [
+				["images_design/test_name.gif",
+				 `
+				 <h2>お天気流星群</h2>
+				 <p>
+					 最近、一枚絵を作るだけでなくもっと動的な作品を作る挑戦をしています。これはその第一号作品です。<br>
+					 多数ライブラリをベースにした自作Javaライブラリで制作しているので、かなり自由度高く作品を制作することができます。<br>
+					 素材には2017年第67回調布祭のパンフレットの表紙を使用しています。
+				 </p>
+				 `, ""],
 
-			<div class="grid-item">
-				<div class="card">
-					<img src="images_design/MemoryNotRecord.jpg" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>記憶は記録に非ず。</h2>
-							<p>美術部員として初めて出したアート作品です。</p>
-							<p>記憶は事実と変わったり無くなったりしてしまう。<br>
-								ただ単に悲しいこと、という訳ではないけど、<br>
-								どうしても寂しさは感じてしまいます。</p>
-						</div>
+				 ["images_design/M3-jacket.jpg",
+				 `
+				 <h2>Rhythmic Motion ジャケット</h2>
+				 <p>サークルのCDジャケットの表紙です。<br>
+					 テーマを表し、販売会でも目立つようにと悩み抜いて作っています。
+				 </p>
+				 `, ""],
 
-					</div>
-				</div>
-			</div>
+				 ["images_design/MemoryNotRecord.jpg",
+			 	 `
+				 <h2>記憶は記録に非ず。</h2>
+				 <p>美術部員として初めて出したアート作品です。</p>
+				 <p>記憶は事実と変わったり無くなったりしてしまう。<br>
+					 ただ単に悲しいこと、という訳ではないけど、<br>
+					 どうしても寂しさは感じてしまいます。</p>
+				 `, ""],
 
-			<div class="grid-item">
-				<div class="card">
-					<img src="images_design/chofu.jpg" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>第67回調布祭ロゴ</h2>
-							<p>フライヤーや表紙に限らず、こういったシンボルデザインを考えることもあります。<br>
-								このロゴは派手なデザインですが、シンプルなものも作れます。
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+				 ["images_design/chofu.jpg",
+				 `
+				 <h2>第67回調布祭ロゴ</h2>
+				 <p>フライヤーや表紙に限らず、こういったシンボルデザインを考えることもあります。<br>
+					 このロゴは派手なデザインですが、シンプルなものも作れます。
+				 </p>
+				 `, ""],
 
-			<div class="grid-item grid-item--width2">
-				<div class="card">
-					<img src="images_design/sign_for_festival_left2.jpg" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>第68回調布祭巨大パネルデザイン</h2>
-							<p>2018年に電気通信大学は100周年を迎えました。学園祭でも盛り上げたいと正門前に巨大パネルが設置されることが決まり、そのデザインを担当させてもらいました。横5.4m*縦2.4mという、巨大かつ横長でデザインの考え方から改める必要がありました。</p>
-							<p>予想に反して高評価をもらい、ようやくデザイナーの卵になれたと感慨深かったです。実際に設置された看板の写真は<a href="https://twitter.com/uectokyo/status/1064389221769756672">ここから</a>見ることができます。
-						</div>
+				 ["images_design/sign_for_festival_left2.jpg",
+			   `
+				 <h2>第68回調布祭巨大パネルデザイン</h2>
+				 <p>2018年に電気通信大学は100周年を迎えました。学園祭でも盛り上げたいと正門前に巨大パネルが設置されることが決まり、そのデザインを担当させてもらいました。横5.4m*縦2.4mという、巨大かつ横長でデザインの考え方から改める必要がありました。</p>
+				 <p>予想に反して高評価をもらい、ようやくデザイナーの卵になれたと感慨深かったです。実際に設置された看板の写真は<a href="https://twitter.com/uectokyo/status/1064389221769756672">ここから</a>見ることができます。
+				 `, "grid-item--width2"],
+
+				 ["images_design/panhu3.jpg",
+			 		`
+					<h2>第68回調布祭パンフレット表紙</h2>
+
+					<p>2018年第68回調布祭のパンフレットの表紙です。<br>
+						学園祭テーマ「百花繚乱」にちなんだデザインを目指しました。
 					</p>
-					</div>
-				</div>
-			</div>
 
-			<div class="grid-item">
-				<div class="card">
-					<img src="images_design/panhu3.jpg" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>第68回調布祭パンフレット表紙</h2>
+					<p>学校を表すような要素を点在させていますが、実は使用した素材はほとんど自分が以前作成したものだったりします。
+					</p>
+					`,　""],
 
-							<p>2018年第68回調布祭のパンフレットの表紙です。<br>
-								学園祭テーマ「百花繚乱」にちなんだデザインを目指しました。
-							</p>
+					["images_design/hyousi.jpg",
+					`
+					<h2>第67回調布祭パンフレット表紙</h2>
+					<p>2017年第67回調布祭のパンフレットの表紙です。<br>
+						学園祭テーマ「夢幻」にちなんだデザインを目指しました。<br>
+					</p>
+					<p>フライヤーとの間に秘密の裏設定を設け、デザインが似るように意識しています。</p>
+					`, ""],
 
-							<p>学校を表すような要素を点在させていますが、実は使用した素材はほとんど自分が以前作成したものだったりします。
-							</p>
-						</div>
-					</div>
-				</div>
+					["images_design/Chofufes.jpg",
+					`
+					<h2>第67回調布祭フライヤー背景画</h2>
+					<p>第67回調布祭を宣伝するためのフライヤーの背景絵です。<br>
+					残念ながら完成したフライヤーのデータは失ってしまいました。</p>
 
-			</div>
+					<p>デザインと宣伝情報の位置の関係に細部まで気を配り、<br>
+						見た目は派手目でも、両者が互いに邪魔をせずむしろ助け合うように<br>
+						と考えながら作りました。
+					</p>
+					`, ""]
+				];
 
-			<div class="grid-item">
-				<div class="card">
-					<img src="images_design/hyousi.jpg" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>第67回調布祭パンフレット表紙</h2>
-							<p>2017年第67回調布祭のパンフレットの表紙です。<br>
-								学園祭テーマ「夢幻」にちなんだデザインを目指しました。<br>
-							</p>
-							<p>フライヤーとの間に秘密の裏設定を設け、デザインが似るように意識しています。</p>
-						</div>
-					</div>
-				</div>
-			</div>
+				document.open();
+				for (var i in imageInfos) {
+					if (imageInfos.hasOwnProperty(i)) {
+						var imageInfo = imageInfos[i];
+						document.write(`
+							<div class="grid-item ${imageInfo[2]}">
+								<div class="card">
+									<img src="${imageInfo[0]}" alt="" class="img-responsive"/>
+									<div class="card-info">
+										<div class="card-info-tex">
+											${imageInfo[1]}
+										</div>
+									</div>
+								</div>
 
-			<div class="grid-item">
-				<div class="card">
-					<img src="images_design/Chofufes.jpg" alt="" class="img-responsive"/>
-					<div class="card-info">
-						<div class="card-info-tex">
-							<h2>第67回調布祭フライヤー背景画</h2>
-							<p>第67回調布祭を宣伝するためのフライヤーの背景絵です。<br>
-							残念ながら完成したフライヤーのデータは失ってしまいました。</p>
+							</div>
+						`);
+					}
+				}
+				document.close();
 
-							<p>デザインと宣伝情報の位置の関係に細部まで気を配り、<br>
-								見た目は派手目でも、両者が互いに邪魔をせずむしろ助け合うように<br>
-								と考えながら作りました。
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
+			</script>
 		</div>
-
 	</div>
 </section>
 
