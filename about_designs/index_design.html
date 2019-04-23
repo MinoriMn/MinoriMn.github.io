@@ -33,28 +33,27 @@ jQuery(function($){
 	});
 });
 
-function getImageInfosCSV(){
-    var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-    req.open("get", "image_infos.csv", true); // アクセスするファイルを指定
-    req.send(); // HTTPリクエストの発行
-
-    // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ
-    req.onload = function(){
-	 return convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
-    }
-}
-
-function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列として渡される
-    var result = []; // 最終的な二次元配列を入れるための配列
-    var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
-
-    // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
-    for(var i=0;i<tmp.length;++i){
-        result[i] = tmp[i].split(',');
-    }
-
-    return result;
-}
+// function getImageInfosCSV(){
+// 	try (InputStream is = getClass().getResourceAsStream("test.csv")) {
+// 		if (is != null) {
+// 		 convertCSVtoArray(IOUtils.toString(is, Charset.defaultCharset()));
+// 		}
+// 	} catch (IOException e) {
+// 		e.printStackTrace();
+// 	}
+// }
+//
+// function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列として渡される
+//     var result = []; // 最終的な二次元配列を入れるための配列
+//     var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
+//
+//     // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
+//     for(var i=0;i<tmp.length;++i){
+//         result[i] = tmp[i].split(',');
+//     }
+//
+//     return result;
+// }
 
 
 </script>
@@ -107,84 +106,83 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 
 			<script type="text/javascript">
 
-			let imageInfos = getImageInfosCSV();
 			// [image_name, image_subscription, grid_cumstom]
-			// let imageInfos = [
-			// 	["images_design/test_name.gif",
-			// 	 `
-			// 	 <h2>お天気流星群</h2>
-			// 	 <p>
-			// 		 最近、一枚絵を作るだけでなくもっと動的な作品を作る挑戦をしています。これはその第一号作品です。<br>
-			// 		 多数ライブラリをベースにした自作Javaライブラリで制作しているので、かなり自由度高く作品を制作することができます。<br>
-			// 		 素材には2017年第67回調布祭のパンフレットの表紙を使用しています。
-			// 	 </p>
-			// 	 `, ""],
-			//
-			// 	 ["images_design/M3-jacket.jpg",
-			// 	 `
-			// 	 <h2>Rhythmic Motion ジャケット</h2>
-			// 	 <p>サークルのCDジャケットの表紙です。<br>
-			// 		 テーマを表し、販売会でも目立つようにと悩み抜いて作っています。
-			// 	 </p>
-			// 	 `, ""],
-			//
-			// 	 ["images_design/MemoryNotRecord.jpg",
-			//  	 `
-			// 	 <h2>記憶は記録に非ず。</h2>
-			// 	 <p>美術部員として初めて出したアート作品です。</p>
-			// 	 <p>記憶は事実と変わったり無くなったりしてしまう。<br>
-			// 		 ただ単に悲しいこと、という訳ではないけど、<br>
-			// 		 どうしても寂しさは感じてしまいます。</p>
-			// 	 `, ""],
-			//
-			// 	 ["images_design/chofu.jpg",
-			// 	 `
-			// 	 <h2>第67回調布祭ロゴ</h2>
-			// 	 <p>フライヤーや表紙に限らず、こういったシンボルデザインを考えることもあります。<br>
-			// 		 このロゴは派手なデザインですが、シンプルなものも作れます。
-			// 	 </p>
-			// 	 `, ""],
-			//
-			// 	 ["images_design/sign_for_festival_left2.jpg",
-			//    `
-			// 	 <h2>第68回調布祭巨大パネルデザイン</h2>
-			// 	 <p>2018年に電気通信大学は100周年を迎えました。学園祭でも盛り上げたいと正門前に巨大パネルが設置されることが決まり、そのデザインを担当させてもらいました。横5.4m*縦2.4mという、巨大かつ横長でデザインの考え方から改める必要がありました。</p>
-			// 	 <p>予想に反して高評価をもらい、ようやくデザイナーの卵になれたと感慨深かったです。実際に設置された看板の写真は<a href="https://twitter.com/uectokyo/status/1064389221769756672">ここから</a>見ることができます。
-			// 	 `, "grid-item--width2"],
-			//
-			// 	 ["images_design/panhu3.jpg",
-			//  		`
-			// 		<h2>第68回調布祭パンフレット表紙</h2>
-			//
-			// 		<p>2018年第68回調布祭のパンフレットの表紙です。<br>
-			// 			学園祭テーマ「百花繚乱」にちなんだデザインを目指しました。
-			// 		</p>
-			//
-			// 		<p>学校を表すような要素を点在させていますが、実は使用した素材はほとんど自分が以前作成したものだったりします。
-			// 		</p>
-			// 		`,　""],
-			//
-			// 		["images_design/hyousi.jpg",
-			// 		`
-			// 		<h2>第67回調布祭パンフレット表紙</h2>
-			// 		<p>2017年第67回調布祭のパンフレットの表紙です。<br>
-			// 			学園祭テーマ「夢幻」にちなんだデザインを目指しました。<br>
-			// 		</p>
-			// 		<p>フライヤーとの間に秘密の裏設定を設け、デザインが似るように意識しています。</p>
-			// 		`, ""],
-			//
-			// 		["images_design/Chofufes.jpg",
-			// 		`
-			// 		<h2>第67回調布祭フライヤー背景画</h2>
-			// 		<p>第67回調布祭を宣伝するためのフライヤーの背景絵です。<br>
-			// 		残念ながら完成したフライヤーのデータは失ってしまいました。</p>
-			//
-			// 		<p>デザインと宣伝情報の位置の関係に細部まで気を配り、<br>
-			// 			見た目は派手目でも、両者が互いに邪魔をせずむしろ助け合うように<br>
-			// 			と考えながら作りました。
-			// 		</p>
-			// 		`, ""]
-			// 	];
+			let imageInfos = [
+				["images_design/test_name.gif",
+				 `
+				 <h2>お天気流星群</h2>
+				 <p>
+					 最近、一枚絵を作るだけでなくもっと動的な作品を作る挑戦をしています。これはその第一号作品です。<br>
+					 多数ライブラリをベースにした自作Javaライブラリで制作しているので、かなり自由度高く作品を制作することができます。<br>
+					 素材には2017年第67回調布祭のパンフレットの表紙を使用しています。
+				 </p>
+				 `, ""],
+
+				 ["images_design/M3-jacket.jpg",
+				 `
+				 <h2>Rhythmic Motion ジャケット</h2>
+				 <p>サークルのCDジャケットの表紙です。<br>
+					 テーマを表し、販売会でも目立つようにと悩み抜いて作っています。
+				 </p>
+				 `, ""],
+
+				 ["images_design/MemoryNotRecord.jpg",
+			 	 `
+				 <h2>記憶は記録に非ず。</h2>
+				 <p>美術部員として初めて出したアート作品です。</p>
+				 <p>記憶は事実と変わったり無くなったりしてしまう。<br>
+					 ただ単に悲しいこと、という訳ではないけど、<br>
+					 どうしても寂しさは感じてしまいます。</p>
+				 `, ""],
+
+				 ["images_design/chofu.jpg",
+				 `
+				 <h2>第67回調布祭ロゴ</h2>
+				 <p>フライヤーや表紙に限らず、こういったシンボルデザインを考えることもあります。<br>
+					 このロゴは派手なデザインですが、シンプルなものも作れます。
+				 </p>
+				 `, ""],
+
+				 ["images_design/sign_for_festival_left2.jpg",
+			   `
+				 <h2>第68回調布祭巨大パネルデザイン</h2>
+				 <p>2018年に電気通信大学は100周年を迎えました。学園祭でも盛り上げたいと正門前に巨大パネルが設置されることが決まり、そのデザインを担当させてもらいました。横5.4m*縦2.4mという、巨大かつ横長でデザインの考え方から改める必要がありました。</p>
+				 <p>予想に反して高評価をもらい、ようやくデザイナーの卵になれたと感慨深かったです。実際に設置された看板の写真は<a href="https://twitter.com/uectokyo/status/1064389221769756672">ここから</a>見ることができます。
+				 `, "grid-item--width2"],
+
+				 ["images_design/panhu3.jpg",
+			 		`
+					<h2>第68回調布祭パンフレット表紙</h2>
+
+					<p>2018年第68回調布祭のパンフレットの表紙です。<br>
+						学園祭テーマ「百花繚乱」にちなんだデザインを目指しました。
+					</p>
+
+					<p>学校を表すような要素を点在させていますが、実は使用した素材はほとんど自分が以前作成したものだったりします。
+					</p>
+					`,　""],
+
+					["images_design/hyousi.jpg",
+					`
+					<h2>第67回調布祭パンフレット表紙</h2>
+					<p>2017年第67回調布祭のパンフレットの表紙です。<br>
+						学園祭テーマ「夢幻」にちなんだデザインを目指しました。<br>
+					</p>
+					<p>フライヤーとの間に秘密の裏設定を設け、デザインが似るように意識しています。</p>
+					`, ""],
+
+					["images_design/Chofufes.jpg",
+					`
+					<h2>第67回調布祭フライヤー背景画</h2>
+					<p>第67回調布祭を宣伝するためのフライヤーの背景絵です。<br>
+					残念ながら完成したフライヤーのデータは失ってしまいました。</p>
+
+					<p>デザインと宣伝情報の位置の関係に細部まで気を配り、<br>
+						見た目は派手目でも、両者が互いに邪魔をせずむしろ助け合うように<br>
+						と考えながら作りました。
+					</p>
+					`, ""]
+				];
 
 
 
@@ -199,6 +197,8 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 									<div class="card-info">
 										<div class="card-info-tex">
 											${imageInfo[1]}
+											<br>
+											<a href="image_detail.html?name=${imageInfo[0]}&index=${i}">画像を見る</a>
 										</div>
 									</div>
 								</div>
@@ -207,7 +207,6 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 						`);
 					}
 				}
-										// <a href="image_detail.html?"></a>
 				document.close();
 
 			</script>

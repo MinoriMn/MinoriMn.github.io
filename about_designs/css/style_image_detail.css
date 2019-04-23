@@ -1,0 +1,11 @@
+body {
+background-color: #000000;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+}
