@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* @import url(style-opening.css); */
+
+
 /*全端末（PC・タブレット・スマホ）共通設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -109,7 +112,7 @@ header .icon img {
 	width: 80%;				/*幅*/
 	margin: 0 auto 40px;	/*上、左右、下へのボックスの外側の余白。左右にautoを指定すると中央配置になる。*/
 	padding: 30px;			/*ボックス内の余白*/
-	border-radius: 0px;	/*角丸のサイズ。この行削除すれば角が尖った通常の四角形になります。*/
+	border-radius: 20px;	/*角丸のサイズ。この行削除すれば角が尖った通常の四角形になります。*/
 }
 /*１つ目のブロック*/
 .first {
@@ -144,7 +147,7 @@ header .icon img {
 }
 /*トップページのcontentsブロック*/
 .home #contents {
-	animation-delay: 5.5s;	/*アニメーションを遅れて開始させる指定の上書き。5.5sは5.5秒の事。アニメーションが終了した後、contentsを出力するまでの待機時間。*/
+	animation-delay: 0.5s;	/*アニメーションを遅れて開始させる指定の上書き。5.5sは5.5秒の事。アニメーションが終了した後、contentsを出力するまでの待機時間。*/
 }
 /*h2見出し*/
 #contents h2 {
@@ -179,9 +182,10 @@ footer {
 	clear: both;
 	text-align: center;	/*センタリング*/
 	padding-bottom: 30px;
+	color: #fff;
 }
-footer a {text-decoration: none;}
-footer a:hover {color: #666;}
+footer a {text-decoration: none; color: #fff;}
+footer a:hover {color: #fff;}
 footer .pr {display: block;}
 
 /*「更新情報・お知らせ」ブロック
@@ -199,6 +203,25 @@ footer .pr {display: block;}
 /*記事設定*/
 #new dd {
 	padding-left: 9em;	/*左に空ける余白*/
+}
+
+/* 背景設定
+---------------------------------------------------------------------------*/
+/*トップページなど*/
+#page-background-0{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background: #000;
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+}
+
+#page-background-0 img{
+	display: block; 
+	margin: 0 auto;
 }
 
 /*galleryページの画像切り替え
@@ -275,6 +298,27 @@ footer .pr {display: block;}
 .ta1 th {
 	width: 140px;		/*幅*/
 	text-align: center;	/*センタリング*/
+}
+
+/*PAGE TOP ファーストビュー設定
+---------------------------------------------------------------------------*/
+#first-view{
+	width: 100vw;
+	height: 100vh;
+	position:relative;
+}
+
+#first-view p {
+	/* display: block; */
+	position:absolute;
+	top: 50%;
+	left: 50%;
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+	-webkit-transform : translateX(-50%);
+  transform : translateX(-50%);
+	color: #fff;
+	font-size: 400%;
 }
 
 /*PAGE TOP（↑）設定
