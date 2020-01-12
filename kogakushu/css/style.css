@@ -129,6 +129,7 @@ header .icon {
 }
 /*スマホ用メニューを表示させない*/
 #menubar-s {display: none;}
+
 /*３本バーアイコンを表示させない*/
 #menubar_hdr {display: none;}
 
@@ -486,6 +487,13 @@ ol {
 		display: block;
 		font-size: 10px;/*文字サイズ*/
 	}
+
+	/*アイコン画像の設定*/
+	#menubar-s li img {
+		width: 30px;		/*画像の幅*/
+		margin-right: 5px;	/*画像同士の余白*/
+	}
+
 	/*PC用メニューを非表示にする*/
 	#menubar {display: none;}
 
