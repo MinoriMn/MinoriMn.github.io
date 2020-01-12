@@ -69,7 +69,7 @@ header #logo {
 }
 header #logo img {
 	height: 90px;		/*画像の幅*/
-	margin: 5px auto;	/*上に空けるスペース*/
+	margin-top: 3px; 
 }
 
 /*headerアイコン（facebookやtwitterなどのアイコンブロック）
