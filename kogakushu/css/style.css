@@ -341,7 +341,8 @@ footer .pr {display: block;}
 /*PAGE TOP ファーストビュー設定
 ---------------------------------------------------------------------------*/
 #first-view{
-	width: 100vw;
+	margin: auto;
+	width: 80vw;
 	height: 100vh;
 	position:relative;
 }
