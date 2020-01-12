@@ -65,11 +65,12 @@ header {
 /*ロゴ画像*/
 header #logo {
 	width:30%;
+	min-width: 105px;
 	float:left;
 }
 header #logo img {
 	height: 90px;		/*画像の幅*/
-	margin-top: 3px; 
+	margin-top: 5px;
 }
 
 /*headerアイコン（facebookやtwitterなどのアイコンブロック）
@@ -595,8 +596,8 @@ ol {
 	---------------------------------------------------------------------------*/
 	/*ロゴ画像*/
 	header #logo img {
-		width: 170px;		/*画像の幅*/
-		margin-top: 20px;	/*上に空けるスペース*/
+		/* width: 170px;		/*画像の幅*/
+		/* margin-top: 20px;	/*上に空けるスペース*/
 	}
 
 	/*inner
