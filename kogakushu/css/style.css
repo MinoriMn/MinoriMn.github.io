@@ -60,12 +60,16 @@ header {
 	width: 100%;
 	height: 100px;
 	background: #333;	/*背景色（古いブラウザ用）*/
-	background: rgba(28,82,5,0.8);	/*背景色。28,82,5はRGBでの色指定。0.8は色が80%ついた状態の事。*/
+	background: rgba(0,52,102,0.8);	/*背景色。28,82,5はRGBでの色指定。0.8は色が80%ついた状態の事。*/
 }
 /*ロゴ画像*/
+header #logo {
+	width:30%;
+	float:left;
+}
 header #logo img {
-	width: 250px;		/*画像の幅*/
-	margin-top: 15px;	/*上に空けるスペース*/
+	height: 90px;		/*画像の幅*/
+	margin: 5px auto;	/*上に空けるスペース*/
 }
 
 /*headerアイコン（facebookやtwitterなどのアイコンブロック）
@@ -75,31 +79,38 @@ header .icon {
 	position: absolute;
 	right: 3%;		/*ヘッダーブロックに対して右から3%の場所に配置*/
 	bottom: 15px;	/*ヘッダーブロックに対して下から15pxの場所に配置*/
+	float:right;
 }
 /*アイコン１個あたりの設定*/
-header .icon li {
-	display: inline;	/*横並びにさせる指定*/
-}
+/* header .icon li {
+	display: inline;	横並びにさせる指定
+} */
 /*アイコン画像の設定*/
-header .icon img {
-	width: 30px;		/*画像の幅*/
-	margin-left: 5px;	/*画像同士の余白*/
-}
+/* header .icon img {
+	width: 30px;		/*画像の幅/
+	margin-left: 5px;	/*画像同士の余白/
+} */
 
 /*メニュー
 ---------------------------------------------------------------------------*/
 /*メニュー全体を囲むブロック*/
 #menubar {
+	height:100px;
 	position: relative;
-	text-align: center;		/*文字をセンタリング*/
+	text-align: right;		/*文字をセンタリング*/
 	font-size: 13px;		/*文字サイズ*/
-	margin-top: 15px;		/*上に空けるスペース*/
+	margin-right: 3%;
+	float:right;
+}
+/*メニュー全体の設定*/
+#menubar ul{
+	margin-top: 60px;
 }
 /*メニュー１個あたりの設定*/
 #menubar li {
 	display: inline;	/*横並びにする設定*/
 }
-#menubar li a {
+#menubar li .menu_link {
 	text-decoration: none;
 	color: #fff;	/*文字色*/
 	padding: 0px 10px 5px 13px;	/*上、右、下、左へのメニュー内の余白*/
@@ -107,8 +118,13 @@ header .icon img {
 	margin: 0 10px;				/*上下、左右へのメニューの外側の余白*/
 }
 /*マウスオン時の設定*/
-#menubar li a:hover {
+#menubar li .menu_link:hover {
 	border-bottom: 3px solid #fff;	/*下線の幅、線種、色*/
+}
+/*アイコン画像の設定*/
+#menubar li img {
+	width: 30px;		/*画像の幅*/
+	margin-left: 5px;	/*画像同士の余白*/
 }
 /*スマホ用メニューを表示させない*/
 #menubar-s {display: none;}
@@ -228,6 +244,14 @@ footer .pr {display: block;}
 	width:100%;
 	height:100%;
 	margin: 0 auto;
+}
+
+#page-background-0 video{
+	height: 100vh;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	opacity: 0.5;
 }
 
 #page-background-0 img{
