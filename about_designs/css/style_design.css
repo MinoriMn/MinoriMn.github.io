@@ -59,6 +59,7 @@
 	opacity: 0;
 	text-align:center;
 	display: flex;
+	overflow-y: scroll;
 
 	-webkit-transition: 1s;
 		 -moz-transition: all 1s;
