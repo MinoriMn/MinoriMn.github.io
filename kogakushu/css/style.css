@@ -211,10 +211,10 @@ footer {
 	clear: both;
 	text-align: center;	/*センタリング*/
 	padding-bottom: 30px;
-	color: #fff;
+	color: #888;
 }
-footer a {text-decoration: none; color: #fff;}
-footer a:hover {color: #fff;}
+footer a {text-decoration: none; color: #888;}
+footer a:hover {color: #888;}
 footer .pr {display: block;}
 
 /*「更新情報・お知らせ」ブロック
@@ -266,8 +266,14 @@ footer .pr {display: block;}
 	opacity: 0.5;
 }
 
-/*galleryページの画像切り替え
+/*過去の出演(galleryページの画像切り替え)
 ---------------------------------------------------------------------------*/
+.about_past_cast h3 span{
+	margin-left: 20px;
+font-size: 70%;
+color:#888;
+}
+
 /*大きな画像のボックスと説明文を入れるボックス*/
 #item-image {
 	position: relative;
