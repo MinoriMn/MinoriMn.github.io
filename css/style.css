@@ -112,6 +112,11 @@ input:focus {
 	outline: 0;
 }
 
+.clear_float {
+	/* floatを解除 */
+	clear: both;
+}
+
 
 /* ヘッダー
 ------------------------------------------------------------*/
@@ -423,6 +428,24 @@ section h2 {
 	line-height: 1.6em;
 }
 
+.content_center_right {
+	padding: 0 0 0 15%;
+	width: 85%;
+}
+
+.content_center_left {
+	padding: 0 15% 0 0;
+	width: 85%;
+}
+
+@media only screen and (max-width: 799px) {
+
+	.content_center_right,
+	.content_center_left {
+		padding: 0 5%;
+		width: 90%;
+	}
+}
 
 
 /* RESPONSIVE 設定
