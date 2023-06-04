@@ -397,6 +397,33 @@ section h2 {
 	text-align: left;
 }
 
+/* SOFTWARES
+------------------------------------------------------------*/
+
+#research dl {
+	line-height: 1.2;
+}
+
+#research dt {
+	clear: left;
+	float: left;
+	display: block;
+	width: 22%;
+	margin-right: 8%;
+	margin-bottom: 20px;
+	text-align: right;
+	line-height: 1.6em;
+}
+
+#research dd {
+	width: 70%;
+	float: left;
+	text-align: left;
+	margin-bottom: 15px;
+	line-height: 1.6em;
+}
+
+
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
