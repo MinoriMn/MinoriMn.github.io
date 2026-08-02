@@ -1,7 +1,7 @@
 # LiveWallpaperBuilder support form
 
 Published form:
-https://docs.google.com/forms/d/e/1FAIpQLSebOiezLYYa1Q1Qko6VobwIHT0cSio5y3L0fe3_psxqV-DIRQ/viewform
+https://docs.google.com/forms/d/e/1FAIpQLSejrmGYj4gSuewTWGvwrR7jRYRpMaQqR3u57jAnU1Q0ANlP1w/viewform
 
 Google Forms does not provide a complete per-respondent language switch. Keep this short form
 bilingual so Japanese and English responses remain in one response sheet.
@@ -43,8 +43,8 @@ https://minorimn.com/apps/live-wallpaper-builder/privacy/
    - `English / 英語`
    - `返信不要 / No reply needed`
 3. Required paragraph: `内容 / Message`
-4. Optional short answer: `アプリのバージョン / App version`
-5. Optional short answer: `Android バージョン・端末名 / Android version and device model`
-6. Optional short answer with email validation: `返信先メールアドレス / Reply email address`
+4. Optional short answer: `Android バージョン・端末名 / Android version and device model`
+5. Optional short answer: `アプリのバージョン / App version`
+6. Optional short answer: `返信先メールアドレス / Reply email address`
 7. Required checkbox:
    `入力内容を問い合わせ対応とアプリ改善に利用することに同意します。 / I agree that my submission may be used to respond and improve the app.`
