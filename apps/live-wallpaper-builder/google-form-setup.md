@@ -1,7 +1,7 @@
 # LiveWallpaperBuilder support form
 
 Published form:
-https://docs.google.com/forms/d/e/1FAIpQLSebOiezLYYa1Q1Qko6VobwIHT0cSio5y3L0fe3_psxqV-DIRQ/viewform
+https://docs.google.com/forms/d/e/1FAIpQLSejrmGYj4gSuewTWGvwrR7jRYRpMaQqR3u57jAnU1Q0ANlP1w/viewform?usp=dialog
 
 Google Forms does not provide a complete per-respondent language switch. Keep this short form
 bilingual so Japanese and English responses remain in one response sheet.
