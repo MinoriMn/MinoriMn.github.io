@@ -132,7 +132,7 @@ const translations = {
 		privacyDescription: "Datenschutzerklärung für Live-Hintergrund-Ersteller.",
 		lastUpdated: "Gültig und zuletzt aktualisiert: 11. August 2026",
 		faqTitle: "Häufige Fragen",
-		faqDescription: "Häufige Fragen zu Live-Hintergrund-Ersteller.",
+		faqDescription: "Häufige Fragen zum Live-Hintergrund-Ersteller.",
 		faqSubtitle: "Häufig gestellte Fragen und Antworten",
 		support: "Support",
 		navLabel: "Support-Navigation",
