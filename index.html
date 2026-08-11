@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="公開中のアプリに関する情報とプライバシーポリシー。">
+	<meta name="description" content="公開中のアプリに関する情報とプライバシーポリシー。" data-i18n-content="siteDescription">
 	<title>アプリ情報</title>
 	<style>
 		:root {
@@ -38,19 +38,54 @@
 		a {
 			color: LinkText;
 		}
-	</style>
-</head>
-<body>
-	<main>
-		<h1>アプリ情報</h1>
-		<p>公開中のアプリに関する情報とプライバシーポリシーを掲載します。</p>
 
-		<section aria-labelledby="privacy-policies">
-			<h2 id="privacy-policies">LiveWallpaperBuilder</h2>
+		.language-switcher {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+			margin-top: 1.5rem;
+		}
+
+		.language-switcher button {
+			background: transparent;
+			border: 1px solid color-mix(in srgb, CanvasText 30%, transparent);
+			border-radius: 0.25rem;
+			color: inherit;
+			cursor: pointer;
+			font: inherit;
+			padding: 0.35rem 0.6rem;
+		}
+
+		.language-switcher button[aria-pressed="true"] {
+			background: Highlight;
+			border-color: Highlight;
+			color: HighlightText;
+		}
+	</style>
+	<script src="./language.js" defer></script>
+</head>
+<body data-page-title="siteTitle">
+	<main>
+		<h1 data-i18n="siteTitle">アプリ情報</h1>
+		<p data-i18n="siteDescription">公開中のアプリに関する情報とプライバシーポリシーを掲載します。</p>
+
+		<div class="language-switcher" data-i18n-aria-label="languageLabel" aria-label="言語">
+			<button type="button" data-language-button="ja" aria-pressed="true">日本語</button>
+			<button type="button" data-language-button="en" aria-pressed="false">English</button>
+			<button type="button" data-language-button="zh-Hans" aria-pressed="false">中文（简体）</button>
+			<button type="button" data-language-button="es" aria-pressed="false">Español</button>
+			<button type="button" data-language-button="ko" aria-pressed="false">한국어</button>
+			<button type="button" data-language-button="pt" aria-pressed="false">Português (Brasil)</button>
+			<button type="button" data-language-button="de" aria-pressed="false">Deutsch</button>
+			<button type="button" data-language-button="id" aria-pressed="false">Bahasa Indonesia</button>
+		</div>
+
+		<section aria-labelledby="live-wallpaper-builder">
+			<h2 id="live-wallpaper-builder">LiveWallpaperBuilder</h2>
 			<ul>
-				<li><a href="/apps/live-wallpaper-builder/privacy/">プライバシーポリシー / Privacy Policy</a></li>
-				<li><a href="/apps/live-wallpaper-builder/faq/">Q&amp;A / FAQ</a></li>
-				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejrmGYj4gSuewTWGvwrR7jRYRpMaQqR3u57jAnU1Q0ANlP1w/viewform">機能リクエスト・お問い合わせ / Requests &amp; Contact</a></li>
+				<li><a href="/apps/live-wallpaper-builder/privacy/" data-i18n="privacyPolicy" data-language-link>プライバシーポリシー</a></li>
+				<li><a href="/apps/live-wallpaper-builder/faq/" data-i18n="faq" data-language-link>Q&amp;A</a></li>
+				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejrmGYj4gSuewTWGvwrR7jRYRpMaQqR3u57jAnU1Q0ANlP1w/viewform" data-i18n="contact">機能リクエスト・お問い合わせ</a></li>
 			</ul>
 		</section>
 	</main>
