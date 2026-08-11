@@ -3,29 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="LiveWallpaperBuilder のプライバシーポリシー、Q&amp;A、サポート情報。">
-	<title>LiveWallpaperBuilder サポート</title>
+	<meta name="description" content="LiveWallpaperBuilder のプライバシーポリシー、Q&amp;A、サポート情報。" data-i18n-content="supportDescription">
+	<title>サポート | LiveWallpaperBuilder</title>
 	<link rel="stylesheet" href="./styles.css">
+	<script src="./language.js" defer></script>
 </head>
-<body>
+<body data-page-title="supportTitle">
 	<main>
 		<header>
 			<p>LiveWallpaperBuilder</p>
-			<h1>サポート / Support</h1>
-			<p>アプリの公開情報とサポート窓口です。</p>
+			<h1 data-i18n="supportTitle">サポート</h1>
+			<p data-i18n="supportDescription">アプリの公開情報とサポート窓口です。</p>
 		</header>
 
+		<div class="language-switcher" data-i18n-aria-label="languageLabel" aria-label="言語">
+			<button type="button" data-language-button="ja" aria-pressed="true">日本語</button>
+			<button type="button" data-language-button="en" aria-pressed="false">English</button>
+			<button type="button" data-language-button="zh-Hans" aria-pressed="false">中文（简体）</button>
+			<button type="button" data-language-button="es" aria-pressed="false">Español</button>
+			<button type="button" data-language-button="ko" aria-pressed="false">한국어</button>
+			<button type="button" data-language-button="pt" aria-pressed="false">Português (Brasil)</button>
+			<button type="button" data-language-button="de" aria-pressed="false">Deutsch</button>
+			<button type="button" data-language-button="id" aria-pressed="false">Bahasa Indonesia</button>
+		</div>
+
 		<section>
-			<h2>公開情報</h2>
-			<nav aria-label="LiveWallpaperBuilder support pages">
-				<a href="./privacy/">プライバシーポリシー / Privacy Policy</a>
-				<a href="./faq/">Q&amp;A / FAQ</a>
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSejrmGYj4gSuewTWGvwrR7jRYRpMaQqR3u57jAnU1Q0ANlP1w/viewform">機能リクエスト・お問い合わせ / Requests &amp; Contact</a>
+			<h2 data-i18n="publicInfo">公開情報</h2>
+			<nav data-i18n-aria-label="navLabel" aria-label="サポートナビゲーション">
+				<a href="./privacy/" data-i18n="privacyPolicy" data-language-link>プライバシーポリシー</a>
+				<a href="./faq/" data-i18n="faq" data-language-link>Q&amp;A</a>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSejrmGYj4gSuewTWGvwrR7jRYRpMaQqR3u57jAnU1Q0ANlP1w/viewform" data-i18n="contact">機能リクエスト・お問い合わせ</a>
 			</nav>
 		</section>
 
 		<footer>
-			<a href="/">アプリ情報へ戻る</a>
+			<a href="/" data-i18n="backToApps" data-language-link>アプリ情報へ戻る</a>
 		</footer>
 	</main>
 </body>
