@@ -54,8 +54,24 @@ nav {
 
 .language-switcher {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 0.5rem;
-	margin: 1.5rem 0;
+	margin-top: 1.5rem;
+}
+
+.language-switcher button {
+	background: transparent;
+	border: 1px solid color-mix(in srgb, CanvasText 30%, transparent);
+	border-radius: 0.25rem;
+	color: inherit;
+	padding: 0.35rem 0.6rem;
+}
+
+.language-switcher button[aria-pressed="true"] {
+	background: Highlight;
+	border-color: Highlight;
+	color: HighlightText;
+	font-weight: normal;
 }
 
 button,
