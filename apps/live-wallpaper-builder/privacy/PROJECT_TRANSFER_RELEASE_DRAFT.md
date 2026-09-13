@@ -2,14 +2,15 @@
 
 ## Status
 
-This is a release draft for the planned project export and import feature. It is not part of
-the published privacy policy and must not be presented as current app behavior. Publish the
-localized text below in `index.html` only in the same release that makes the feature available,
-then update the last-updated date in `../language.js`.
+This release draft records the disclosure for the project export and import feature. The
+corresponding Japanese, English, Simplified Chinese, Spanish, Korean, Brazilian Portuguese,
+German, and Indonesian disclosures are now published in `index.html` for the feature release.
+Keep this file as the review record and compare it with the shipping build and the published
+localized text whenever the transfer format or destinations change.
 
-Before publication, compare this draft with the shipping build, the Google Play Data safety form,
-and the in-app disclosure. Do not publish it if the app uploads, synchronizes, analyzes, or
-automatically shares project packages.
+Compare this draft with the shipping build, the Google Play Data safety form, and the in-app
+disclosure before each release. Do not publish or ship the feature if the app uploads,
+synchronizes, analyzes, or automatically shares project packages.
 
 ## Japanese copy
 
