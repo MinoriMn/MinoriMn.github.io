@@ -10,7 +10,8 @@ localized text whenever the transfer format or destinations change.
 
 Compare this draft with the shipping build, the Google Play Data safety form, and the in-app
 disclosure before each release. Do not publish or ship the feature if the app uploads,
-synchronizes, analyzes, or automatically shares project packages.
+synchronizes, analyzes, or automatically shares project packages without the user's explicit
+action.
 
 ## Japanese copy
 
