@@ -74,3 +74,6 @@ following facts:
 5. The user selects the destination using Android system UI; there is no automatic sending or synchronization.
 6. The chosen destination's or recipient's policy governs data after sharing.
 7. The user is responsible for deleting exported copies and for having rights to share the included content.
+8. The App and Developer do not review or guarantee content rights; users are responsible, to the
+   extent permitted by applicable law, for issues arising from their use, sharing, or uploading of
+   content.
